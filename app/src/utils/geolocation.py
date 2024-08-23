@@ -1,7 +1,7 @@
-from geopy.geocoders import Nominatim
 from geopy.distance import geodesic
+import aiohttp
 
-def get_coordinates(address):
+async def get_coordinates_async(address: str) -> tuple:
     """
     Retrieves the latitude and longitude coordinates of a given address.
 
@@ -11,11 +11,15 @@ def get_coordinates(address):
     Returns:
     tuple: A tuple containing the latitude and longitude coordinates of the address.
     """
-    geolocator = Nominatim(user_agent="my_app_decoded")
-    location = geolocator.geocode(address)
-    return (location.latitude, location.longitude)
+    async with aiohttp.ClientSession() as session:
+        async with session.get(f"https://nominatim.openstreetmap.org/search?q={address}&format=json") as response:
+            data = await response.json()
+            if not data:
+                raise ValueError(f"Could not find the coordinates for the address {address}.")
+            location = data[0]
+            return (float(location["lat"]), float(location["lon"]))
 
-def calculate_distance(address1, address2):
+async def calculate_distance_async(address1: str, address2: str) -> float:
     """
     Calculate the distance in kilometers between two addresses.
 
@@ -26,6 +30,6 @@ def calculate_distance(address1, address2):
     Returns:
     float: The distance in kilometers between the two addresses.
     """
-    coords1 = get_coordinates(address1)
-    coords2 = get_coordinates(address2)
+    coords1 = await get_coordinates_async(address1)
+    coords2 = await get_coordinates_async(address2)
     return geodesic(coords1, coords2).kilometers
