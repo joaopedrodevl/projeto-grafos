@@ -4,14 +4,15 @@ import asyncio
 import threading
 import time
 from utils.data_handler import read_xls, verify_file_exists, verify_city_exists
-from utils.graph_handler import add_edges_between_origin_city_and_cities_to_visit_async, add_edges_between_cities_async
+from utils.graph_handler import add_edges_between_origin_city_and_cities_to_visit_async, add_edges_between_cities_async, shortest_path_between_two_vertices_passing_through_all, draw_shorter_path
 
 file_path = os.path.join(os.path.dirname(__file__), "..", "data", "mapa.xls")
 
 async def main():
     graph = nx.DiGraph()
+    graphPath = nx.DiGraph()
     
-    origin_city = "Campina Grande, PB, Brasil"
+    origin_city = "Campina Grande - PB"
     cities_to_visit = ["João Pessoa", "Alagoa Grande", "Uiraúna"]
     
     # Verifying if the file exists
@@ -32,10 +33,17 @@ async def main():
     
     # Add the edges between the cities to visit
     await add_edges_between_cities_async(graph, cities_to_visit_data)
-                
-    # Generating the .gefx file
+
+    # Calculating the shortest path between two vertices passing through all other vertices
+    shortest_path = await shortest_path_between_two_vertices_passing_through_all(graph, origin_city)
+    
+    # Drawing the shortest path
+    await draw_shorter_path(graphPath, shortest_path)
+
+    # Generating .gefx files
     nx.write_gexf(graph, "map.gexf")
-    print("\nThe file map.gexf was generated.")
+    nx.write_gexf(graphPath, "path.gexf")
+    print("\nThe files map.gexf and path.gexf was generated.")
     
 def loading_animation(stop_event):
     animation = "|/-\\"
