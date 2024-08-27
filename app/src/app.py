@@ -9,15 +9,18 @@ from utils.interface import Interface
 
 file_path = os.path.join(os.path.dirname(__file__), "..", "data", "mapa.xls")
 
+# List of possible targets
 target_list = ["MUNICIPIO", "REGIAO_TURISTICA"]
 
 async def main():
     graph = nx.DiGraph()
     graphPath = nx.DiGraph()
     
+    # Selecting the target
     interface = Interface(target_list)
     selected_target = interface.run()
 
+    # Setting the origin city and the cities to visit
     if selected_target == "MUNICIPIO":
         origin_city = "Campina Grande"
         cities_to_visit = ["João Pessoa", "Alagoa Grande", "Uiraúna"]

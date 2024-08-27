@@ -5,24 +5,24 @@
   </meta>
   <graph defaultedgetype="directed" mode="static" name="">
     <nodes>
-      <node id="João Pessoa (PB - Brazil)" label="João Pessoa (PB - Brazil)" />
-      <node id="Campina Grande (PB - Brazil)" label="Campina Grande (PB - Brazil)" />
-      <node id="Alagoa Grande (PB - Brazil)" label="Alagoa Grande (PB - Brazil)" />
-      <node id="Uiraúna (PB - Brazil)" label="Uiraúna (PB - Brazil)" />
+      <node id="Brejo (Alagoa Grande - PB)" label="Brejo (Alagoa Grande - PB)" />
+      <node id="Cariri (Cabaceiras - PB)" label="Cariri (Cabaceiras - PB)" />
+      <node id="Agreste (Arapiraca - AL)" label="Agreste (Arapiraca - AL)" />
+      <node id="Vale dos Sertões (Santa Luzia - PB)" label="Vale dos Sertões (Santa Luzia - PB)" />
     </nodes>
     <edges>
-      <edge source="João Pessoa (PB - Brazil)" target="Campina Grande (PB - Brazil)" id="0" weight="0.11050241664352052" />
-      <edge source="João Pessoa (PB - Brazil)" target="Alagoa Grande (PB - Brazil)" id="1" weight="0.08294483887188105" />
-      <edge source="João Pessoa (PB - Brazil)" target="Uiraúna (PB - Brazil)" id="2" weight="0.3958007529478614" />
-      <edge source="Campina Grande (PB - Brazil)" target="João Pessoa (PB - Brazil)" id="3" weight="0.11050241664352052" />
-      <edge source="Campina Grande (PB - Brazil)" target="Alagoa Grande (PB - Brazil)" id="4" weight="0.034122911839141186" />
-      <edge source="Campina Grande (PB - Brazil)" target="Uiraúna (PB - Brazil)" id="5" weight="0.2907653397415246" />
-      <edge source="Alagoa Grande (PB - Brazil)" target="Campina Grande (PB - Brazil)" id="6" weight="0.034122911839141186" />
-      <edge source="Alagoa Grande (PB - Brazil)" target="João Pessoa (PB - Brazil)" id="7" weight="0.08294483887188105" />
-      <edge source="Alagoa Grande (PB - Brazil)" target="Uiraúna (PB - Brazil)" id="8" weight="0.3130359852020394" />
-      <edge source="Uiraúna (PB - Brazil)" target="Campina Grande (PB - Brazil)" id="9" weight="0.2907653397415246" />
-      <edge source="Uiraúna (PB - Brazil)" target="João Pessoa (PB - Brazil)" id="10" weight="0.3958007529478614" />
-      <edge source="Uiraúna (PB - Brazil)" target="Alagoa Grande (PB - Brazil)" id="11" weight="0.3130359852020394" />
+      <edge source="Brejo (Alagoa Grande - PB)" target="Cariri (Cabaceiras - PB)" id="0" weight="0.08794129430786315" />
+      <edge source="Brejo (Alagoa Grande - PB)" target="Agreste (Arapiraca - AL)" id="1" weight="0.32092624153328014" />
+      <edge source="Brejo (Alagoa Grande - PB)" target="Vale dos Sertões (Santa Luzia - PB)" id="2" weight="0.1438133592805698" />
+      <edge source="Cariri (Cabaceiras - PB)" target="Brejo (Alagoa Grande - PB)" id="3" weight="0.08794129430786315" />
+      <edge source="Cariri (Cabaceiras - PB)" target="Agreste (Arapiraca - AL)" id="4" weight="0.25397848237859777" />
+      <edge source="Cariri (Cabaceiras - PB)" target="Vale dos Sertões (Santa Luzia - PB)" id="5" weight="0.09789224086554109" />
+      <edge source="Agreste (Arapiraca - AL)" target="Cariri (Cabaceiras - PB)" id="6" weight="0.25397848237859777" />
+      <edge source="Agreste (Arapiraca - AL)" target="Brejo (Alagoa Grande - PB)" id="7" weight="0.32092624153328014" />
+      <edge source="Agreste (Arapiraca - AL)" target="Vale dos Sertões (Santa Luzia - PB)" id="8" weight="0.3205549130235718" />
+      <edge source="Vale dos Sertões (Santa Luzia - PB)" target="Cariri (Cabaceiras - PB)" id="9" weight="0.09789224086554109" />
+      <edge source="Vale dos Sertões (Santa Luzia - PB)" target="Brejo (Alagoa Grande - PB)" id="10" weight="0.1438133592805698" />
+      <edge source="Vale dos Sertões (Santa Luzia - PB)" target="Agreste (Arapiraca - AL)" id="11" weight="0.3205549130235718" />
     </edges>
   </graph>
 </gexf>
