@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2024-08-27">
+    <creator>NetworkX 3.3</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <nodes>
+      <node id="Campina Grande (PB - Brazil)" label="Campina Grande (PB - Brazil)" />
+      <node id="Uiraúna (PB - Brazil)" label="Uiraúna (PB - Brazil)" />
+      <node id="Alagoa Grande (PB - Brazil)" label="Alagoa Grande (PB - Brazil)" />
+      <node id="João Pessoa (PB - Brazil)" label="João Pessoa (PB - Brazil)" />
+    </nodes>
+    <edges>
+      <edge source="Campina Grande (PB - Brazil)" target="Uiraúna (PB - Brazil)" id="0" />
+      <edge source="Uiraúna (PB - Brazil)" target="Alagoa Grande (PB - Brazil)" id="1" />
+      <edge source="Alagoa Grande (PB - Brazil)" target="João Pessoa (PB - Brazil)" id="2" />
+    </edges>
+  </graph>
+</gexf>

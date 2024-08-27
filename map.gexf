@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
-  <meta lastmodifieddate="2024-08-24">
+  <meta lastmodifieddate="2024-08-27">
     <creator>NetworkX 3.3</creator>
   </meta>
   <graph defaultedgetype="directed" mode="static" name="">
     <nodes>
-      <node id="João Pessoa - PB" label="João Pessoa - PB" />
-      <node id="Campina Grande, PB, Brasil" label="Campina Grande, PB, Brasil" />
-      <node id="Alagoa Grande - PB" label="Alagoa Grande - PB" />
-      <node id="Uiraúna - PB" label="Uiraúna - PB" />
+      <node id="João Pessoa (PB - Brazil)" label="João Pessoa (PB - Brazil)" />
+      <node id="Campina Grande (PB - Brazil)" label="Campina Grande (PB - Brazil)" />
+      <node id="Alagoa Grande (PB - Brazil)" label="Alagoa Grande (PB - Brazil)" />
+      <node id="Uiraúna (PB - Brazil)" label="Uiraúna (PB - Brazil)" />
     </nodes>
     <edges>
-      <edge source="João Pessoa - PB" target="Campina Grande, PB, Brasil" id="0" weight="0.11050241664352052" />
-      <edge source="João Pessoa - PB" target="Alagoa Grande - PB" id="1" weight="0.08294483887188105" />
-      <edge source="João Pessoa - PB" target="Uiraúna - PB" id="2" weight="0.3958007529478614" />
-      <edge source="Campina Grande, PB, Brasil" target="João Pessoa - PB" id="3" weight="0.11050241664352052" />
-      <edge source="Campina Grande, PB, Brasil" target="Alagoa Grande - PB" id="4" weight="0.034122911839141186" />
-      <edge source="Campina Grande, PB, Brasil" target="Uiraúna - PB" id="5" weight="0.2907653397415246" />
-      <edge source="Alagoa Grande - PB" target="Campina Grande, PB, Brasil" id="6" weight="0.034122911839141186" />
-      <edge source="Alagoa Grande - PB" target="João Pessoa - PB" id="7" weight="0.08294483887188105" />
-      <edge source="Alagoa Grande - PB" target="Uiraúna - PB" id="8" weight="0.3130359852020394" />
-      <edge source="Uiraúna - PB" target="Campina Grande, PB, Brasil" id="9" weight="0.2907653397415246" />
-      <edge source="Uiraúna - PB" target="João Pessoa - PB" id="10" weight="0.3958007529478614" />
-      <edge source="Uiraúna - PB" target="Alagoa Grande - PB" id="11" weight="0.3130359852020394" />
+      <edge source="João Pessoa (PB - Brazil)" target="Campina Grande (PB - Brazil)" id="0" weight="0.11050241664352052" />
+      <edge source="João Pessoa (PB - Brazil)" target="Alagoa Grande (PB - Brazil)" id="1" weight="0.08294483887188105" />
+      <edge source="João Pessoa (PB - Brazil)" target="Uiraúna (PB - Brazil)" id="2" weight="0.3958007529478614" />
+      <edge source="Campina Grande (PB - Brazil)" target="João Pessoa (PB - Brazil)" id="3" weight="0.11050241664352052" />
+      <edge source="Campina Grande (PB - Brazil)" target="Alagoa Grande (PB - Brazil)" id="4" weight="0.034122911839141186" />
+      <edge source="Campina Grande (PB - Brazil)" target="Uiraúna (PB - Brazil)" id="5" weight="0.2907653397415246" />
+      <edge source="Alagoa Grande (PB - Brazil)" target="Campina Grande (PB - Brazil)" id="6" weight="0.034122911839141186" />
+      <edge source="Alagoa Grande (PB - Brazil)" target="João Pessoa (PB - Brazil)" id="7" weight="0.08294483887188105" />
+      <edge source="Alagoa Grande (PB - Brazil)" target="Uiraúna (PB - Brazil)" id="8" weight="0.3130359852020394" />
+      <edge source="Uiraúna (PB - Brazil)" target="Campina Grande (PB - Brazil)" id="9" weight="0.2907653397415246" />
+      <edge source="Uiraúna (PB - Brazil)" target="João Pessoa (PB - Brazil)" id="10" weight="0.3958007529478614" />
+      <edge source="Uiraúna (PB - Brazil)" target="Alagoa Grande (PB - Brazil)" id="11" weight="0.3130359852020394" />
     </edges>
   </graph>
 </gexf>

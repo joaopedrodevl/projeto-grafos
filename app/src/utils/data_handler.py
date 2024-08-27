@@ -14,7 +14,7 @@ def read_xls(file_path: str) -> pd.DataFrame:
     """
     return pd.read_excel(file_path)
 
-def get_data_by_city(df: pd.DataFrame, city: str) -> pd.Series:
+def get_data_by_city(df: pd.DataFrame, city: str, target: str) -> pd.Series:
     """
     Returns the data of a city from a pandas DataFrame.
 
@@ -25,9 +25,9 @@ def get_data_by_city(df: pd.DataFrame, city: str) -> pd.Series:
     Returns:
         pandas.Series: The data of the city.
     """
-    return df[df["MUNICIPIO"] == city]
+    return df[df[target] == city]
 
-def verify_city_exists(df: pd.DataFrame, cities_to_visit: List[str]) -> Optional[List[tuple]]:
+def verify_city_exists(df: pd.DataFrame, cities_to_visit: List[str], target: str) -> Optional[List[tuple]]:
     """
     Verifies if the given cities exist in the DataFrame.
     Parameters:
@@ -41,12 +41,17 @@ def verify_city_exists(df: pd.DataFrame, cities_to_visit: List[str]) -> Optional
     cities_to_visit_data = []
     
     for city in cities_to_visit:
-        if city not in df["MUNICIPIO"].values:
+        if city not in df[target].values:
             print(f"The city {city} does not exist in the DataFrame.")
             return
         else:
-            city_data = get_data_by_city(df, city)
-            cities_to_visit_data.append((city, city_data["UF"].values[0], "Brazil"))
+            city_data = get_data_by_city(df, city, target)
+
+            if target == "MUNICIPIO":
+                cities_to_visit_data.append((city, city, city_data["UF"].values[0], "Brazil"))
+            
+            elif target == "REGIAO_TURISTICA":
+                cities_to_visit_data.append((city, city_data["MUNICIPIO"].values[0], city_data["UF"].values[0], "Brazil"))
             
     return cities_to_visit_data
 

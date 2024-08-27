@@ -186,3 +186,5 @@ pyvenv.cfg
 pip-selfcheck.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python,venv
+app/src/utils/__pycache__/geolocation.cpython-312.pyc
+app/src/utils/__pycache__/__init__.cpython-312.pyc
