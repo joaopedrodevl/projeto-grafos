@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
-  <meta lastmodifieddate="2024-08-27">
+  <meta lastmodifieddate="2024-08-29">
     <creator>NetworkX 3.3</creator>
   </meta>
   <graph defaultedgetype="directed" mode="static" name="">
     <nodes>
-      <node id="Brejo (Alagoa Grande - PB)" label="Brejo (Alagoa Grande - PB)" />
-      <node id="Cariri (Cabaceiras - PB)" label="Cariri (Cabaceiras - PB)" />
-      <node id="Agreste (Arapiraca - AL)" label="Agreste (Arapiraca - AL)" />
-      <node id="Vale dos Sertões (Santa Luzia - PB)" label="Vale dos Sertões (Santa Luzia - PB)" />
+      <node id="Cariri (Gurjão - PB)" label="Cariri (Gurjão - PB)" />
+      <node id="Vale Do Paraíba (Itatuba - PB)" label="Vale Do Paraíba (Itatuba - PB)" />
+      <node id="Vale Do Mamanguape (Jacaraú - PB)" label="Vale Do Mamanguape (Jacaraú - PB)" />
+      <node id="Rota Sanhauá (Cabedelo - PB)" label="Rota Sanhauá (Cabedelo - PB)" />
     </nodes>
     <edges>
-      <edge source="Brejo (Alagoa Grande - PB)" target="Cariri (Cabaceiras - PB)" id="0" weight="0.08794129430786315" />
-      <edge source="Brejo (Alagoa Grande - PB)" target="Agreste (Arapiraca - AL)" id="1" weight="0.32092624153328014" />
-      <edge source="Brejo (Alagoa Grande - PB)" target="Vale dos Sertões (Santa Luzia - PB)" id="2" weight="0.1438133592805698" />
-      <edge source="Cariri (Cabaceiras - PB)" target="Brejo (Alagoa Grande - PB)" id="3" weight="0.08794129430786315" />
-      <edge source="Cariri (Cabaceiras - PB)" target="Agreste (Arapiraca - AL)" id="4" weight="0.25397848237859777" />
-      <edge source="Cariri (Cabaceiras - PB)" target="Vale dos Sertões (Santa Luzia - PB)" id="5" weight="0.09789224086554109" />
-      <edge source="Agreste (Arapiraca - AL)" target="Cariri (Cabaceiras - PB)" id="6" weight="0.25397848237859777" />
-      <edge source="Agreste (Arapiraca - AL)" target="Brejo (Alagoa Grande - PB)" id="7" weight="0.32092624153328014" />
-      <edge source="Agreste (Arapiraca - AL)" target="Vale dos Sertões (Santa Luzia - PB)" id="8" weight="0.3205549130235718" />
-      <edge source="Vale dos Sertões (Santa Luzia - PB)" target="Cariri (Cabaceiras - PB)" id="9" weight="0.09789224086554109" />
-      <edge source="Vale dos Sertões (Santa Luzia - PB)" target="Brejo (Alagoa Grande - PB)" id="10" weight="0.1438133592805698" />
-      <edge source="Vale dos Sertões (Santa Luzia - PB)" target="Agreste (Arapiraca - AL)" id="11" weight="0.3205549130235718" />
+      <edge source="Cariri (Gurjão - PB)" target="Vale Do Paraíba (Itatuba - PB)" id="0" weight="0.09599933234322676" />
+      <edge source="Cariri (Gurjão - PB)" target="Vale Do Mamanguape (Jacaraú - PB)" id="1" weight="0.14949693880788092" />
+      <edge source="Cariri (Gurjão - PB)" target="Rota Sanhauá (Cabedelo - PB)" id="2" weight="0.18489305499240427" />
+      <edge source="Vale Do Paraíba (Itatuba - PB)" target="Cariri (Gurjão - PB)" id="3" weight="0.09599933234322676" />
+      <edge source="Vale Do Paraíba (Itatuba - PB)" target="Vale Do Mamanguape (Jacaraú - PB)" id="4" weight="0.092180129604797" />
+      <edge source="Vale Do Paraíba (Itatuba - PB)" target="Rota Sanhauá (Cabedelo - PB)" id="5" weight="0.09809301521139749" />
+      <edge source="Vale Do Mamanguape (Jacaraú - PB)" target="Cariri (Gurjão - PB)" id="6" weight="0.14949693880788092" />
+      <edge source="Vale Do Mamanguape (Jacaraú - PB)" target="Vale Do Paraíba (Itatuba - PB)" id="7" weight="0.092180129604797" />
+      <edge source="Vale Do Mamanguape (Jacaraú - PB)" target="Rota Sanhauá (Cabedelo - PB)" id="8" weight="0.06436194899140212" />
+      <edge source="Rota Sanhauá (Cabedelo - PB)" target="Cariri (Gurjão - PB)" id="9" weight="0.18489305499240427" />
+      <edge source="Rota Sanhauá (Cabedelo - PB)" target="Vale Do Paraíba (Itatuba - PB)" id="10" weight="0.09809301521139749" />
+      <edge source="Rota Sanhauá (Cabedelo - PB)" target="Vale Do Mamanguape (Jacaraú - PB)" id="11" weight="0.06436194899140212" />
     </edges>
   </graph>
 </gexf>

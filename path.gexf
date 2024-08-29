@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
-  <meta lastmodifieddate="2024-08-27">
+  <meta lastmodifieddate="2024-08-29">
     <creator>NetworkX 3.3</creator>
   </meta>
   <graph defaultedgetype="directed" mode="static" name="">
     <nodes>
-      <node id="Cariri (Cabaceiras - PB)" label="Cariri (Cabaceiras - PB)" />
-      <node id="Brejo (Alagoa Grande - PB)" label="Brejo (Alagoa Grande - PB)" />
-      <node id="Vale dos Sertões (Santa Luzia - PB)" label="Vale dos Sertões (Santa Luzia - PB)" />
-      <node id="Agreste (Arapiraca - AL)" label="Agreste (Arapiraca - AL)" />
+      <node id="Cariri (Gurjão - PB)" label="Cariri (Gurjão - PB)" />
+      <node id="Vale Do Paraíba (Itatuba - PB)" label="Vale Do Paraíba (Itatuba - PB)" />
+      <node id="Rota Sanhauá (Cabedelo - PB)" label="Rota Sanhauá (Cabedelo - PB)" />
+      <node id="Vale Do Mamanguape (Jacaraú - PB)" label="Vale Do Mamanguape (Jacaraú - PB)" />
     </nodes>
     <edges>
-      <edge source="Cariri (Cabaceiras - PB)" target="Brejo (Alagoa Grande - PB)" id="0" />
-      <edge source="Brejo (Alagoa Grande - PB)" target="Vale dos Sertões (Santa Luzia - PB)" id="1" />
-      <edge source="Vale dos Sertões (Santa Luzia - PB)" target="Agreste (Arapiraca - AL)" id="2" />
+      <edge source="Cariri (Gurjão - PB)" target="Vale Do Paraíba (Itatuba - PB)" id="0" />
+      <edge source="Vale Do Paraíba (Itatuba - PB)" target="Rota Sanhauá (Cabedelo - PB)" id="1" />
+      <edge source="Rota Sanhauá (Cabedelo - PB)" target="Vale Do Mamanguape (Jacaraú - PB)" id="2" />
     </edges>
   </graph>
 </gexf>
