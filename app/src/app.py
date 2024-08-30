@@ -5,7 +5,7 @@ import threading
 import time
 from utils.interface import Interface
 from utils.data_handler import read_xls, verify_file_exists, get_data_by_uf, get_data_by_city, getUF, format_text
-from utils.graph_handler import add_edges_between_origin_city_and_cities_to_visit_async, add_edges_between_cities_async, shortest_path_between_two_vertices_passing_through_all, draw_shorter_path
+from utils.graph_handler import add_edges_between_origin_city_and_cities_to_visit_async, add_edges_between_cities_async, shortest_path_between_two_vertices_passing_through_all, draw_shorter_path, nearest_neighbor_tsp, read_graph
 
 file_path = os.path.join(os.path.dirname(__file__), "..", "data", "mapa.xls")
 
@@ -14,7 +14,7 @@ def clear_term():
 
 async def main():
     graph = nx.DiGraph()
-    graphPath = nx.DiGraph()
+    # graphPath = nx.DiGraph()
     
     # Verifying if the file exists
     if not verify_file_exists(file_path):
@@ -74,13 +74,16 @@ async def main():
     print("The file map.gexf was generated.\n")
     
     # Getting the shortest path
-    shortest_path = await shortest_path_between_two_vertices_passing_through_all(graph, city_origin)
+    # shortest_path = await shortest_path_between_two_vertices_passing_through_all(graph, city_origin)
+    
+    # Getting the ideal path
+    ideal_path = nearest_neighbor_tsp(graph, city_origin)
 
     # Drawing the graph
-    await draw_shorter_path(graphPath, shortest_path)
+    # await draw_shorter_path(graphPath, shortest_path)
 
     # Generating .gefx files
-    nx.write_gexf(graphPath, "path.gexf")
+    nx.write_gexf(ideal_path, "path.gexf")
     clear_term()
     print("The file path.gexf were generated.\n")
     

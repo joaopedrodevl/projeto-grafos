@@ -1,19 +1,148 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
-  <meta lastmodifieddate="2024-08-29">
+  <meta lastmodifieddate="2024-08-30">
     <creator>NetworkX 3.3</creator>
   </meta>
   <graph defaultedgetype="directed" mode="static" name="">
     <nodes>
-      <node id="Cariri (Gurjão - PB)" label="Cariri (Gurjão - PB)" />
+      <node id="Agreste  (Campina Grande - PB)" label="Agreste  (Campina Grande - PB)" />
+      <node id="Agreste  (Queimadas - PB)" label="Agreste  (Queimadas - PB)" />
+      <node id="Agreste  (Fagundes - PB)" label="Agreste  (Fagundes - PB)" />
       <node id="Vale Do Paraíba (Itatuba - PB)" label="Vale Do Paraíba (Itatuba - PB)" />
-      <node id="Rota Sanhauá (Cabedelo - PB)" label="Rota Sanhauá (Cabedelo - PB)" />
+      <node id="Vale Do Paraíba (Ingá - PB)" label="Vale Do Paraíba (Ingá - PB)" />
+      <node id="Vale Do Paraíba (Mogeiro - PB)" label="Vale Do Paraíba (Mogeiro - PB)" />
+      <node id="Vale Do Paraíba (Salgado De São Félix - PB)" label="Vale Do Paraíba (Salgado De São Félix - PB)" />
+      <node id="Vale Do Paraíba (Itabaiana - PB)" label="Vale Do Paraíba (Itabaiana - PB)" />
+      <node id="Vale Do Paraíba (Juripiranga - PB)" label="Vale Do Paraíba (Juripiranga - PB)" />
+      <node id="Vale Do Paraíba (Pilar - PB)" label="Vale Do Paraíba (Pilar - PB)" />
+      <node id="Vale Do Paraíba (Gurinhém - PB)" label="Vale Do Paraíba (Gurinhém - PB)" />
+      <node id="Brejo (Alagoinha - PB)" label="Brejo (Alagoinha - PB)" />
+      <node id="Brejo (Pilões - PB)" label="Brejo (Pilões - PB)" />
+      <node id="Brejo (Serraria - PB)" label="Brejo (Serraria - PB)" />
+      <node id="Brejo (Borborema - PB)" label="Brejo (Borborema - PB)" />
+      <node id="Brejo (Bananeiras - PB)" label="Brejo (Bananeiras - PB)" />
+      <node id="Brejo (Solânea - PB)" label="Brejo (Solânea - PB)" />
+      <node id="Brejo (Belém - PB)" label="Brejo (Belém - PB)" />
+      <node id="Brejo (Pirpirituba - PB)" label="Brejo (Pirpirituba - PB)" />
+      <node id="Brejo (Serra Da Raiz - PB)" label="Brejo (Serra Da Raiz - PB)" />
+      <node id="Brejo (Duas Estradas - PB)" label="Brejo (Duas Estradas - PB)" />
+      <node id="Brejo (Lagoa De Dentro - PB)" label="Brejo (Lagoa De Dentro - PB)" />
       <node id="Vale Do Mamanguape (Jacaraú - PB)" label="Vale Do Mamanguape (Jacaraú - PB)" />
+      <node id="Vale Do Mamanguape (Itapororoca - PB)" label="Vale Do Mamanguape (Itapororoca - PB)" />
+      <node id="Vale Do Mamanguape (Mamanguape - PB)" label="Vale Do Mamanguape (Mamanguape - PB)" />
+      <node id="Trilhas Dos Potiguaras  (Rio Tinto - PB)" label="Trilhas Dos Potiguaras  (Rio Tinto - PB)" />
+      <node id="Trilhas Dos Potiguaras  (Marcação - PB)" label="Trilhas Dos Potiguaras  (Marcação - PB)" />
+      <node id="Trilhas Dos Potiguaras  (Baía Da Traição - PB)" label="Trilhas Dos Potiguaras  (Baía Da Traição - PB)" />
+      <node id="Trilhas Dos Potiguaras  (Mataraca - PB)" label="Trilhas Dos Potiguaras  (Mataraca - PB)" />
+      <node id="Rota Sanhauá (Lucena - PB)" label="Rota Sanhauá (Lucena - PB)" />
+      <node id="Rota Sanhauá (Cabedelo - PB)" label="Rota Sanhauá (Cabedelo - PB)" />
+      <node id="Rota Sanhauá (João Pessoa - PB)" label="Rota Sanhauá (João Pessoa - PB)" />
+      <node id="Rota Sanhauá (Bayeux - PB)" label="Rota Sanhauá (Bayeux - PB)" />
+      <node id="Rota Sanhauá (Santa Rita - PB)" label="Rota Sanhauá (Santa Rita - PB)" />
+      <node id="Trilhas Dos Tabajaras (Conde - PB)" label="Trilhas Dos Tabajaras (Conde - PB)" />
+      <node id="Trilhas Dos Tabajaras (Pitimbu - PB)" label="Trilhas Dos Tabajaras (Pitimbu - PB)" />
+      <node id="Trilhas Dos Tabajaras (Caaporã - PB)" label="Trilhas Dos Tabajaras (Caaporã - PB)" />
+      <node id="Vale Do Paraíba (Natuba - PB)" label="Vale Do Paraíba (Natuba - PB)" />
+      <node id="Vale Do Paraíba (Umbuzeiro - PB)" label="Vale Do Paraíba (Umbuzeiro - PB)" />
+      <node id="Cariri (Boqueirão - PB)" label="Cariri (Boqueirão - PB)" />
+      <node id="Cariri (Cabaceiras - PB)" label="Cariri (Cabaceiras - PB)" />
+      <node id="Cariri (Gurjão - PB)" label="Cariri (Gurjão - PB)" />
+      <node id="Cariri (Taperoá - PB)" label="Cariri (Taperoá - PB)" />
+      <node id="Vale Dos Sertões (Santa Luzia - PB)" label="Vale Dos Sertões (Santa Luzia - PB)" />
+      <node id="Vale Dos Sertões (Maturéia - PB)" label="Vale Dos Sertões (Maturéia - PB)" />
+      <node id="Vale Dos Sertões (Água Branca - PB)" label="Vale Dos Sertões (Água Branca - PB)" />
+      <node id="Vale Dos Sertões (Santana Dos Garrotes - PB)" label="Vale Dos Sertões (Santana Dos Garrotes - PB)" />
+      <node id="Vale Dos Sertões (Pedra Branca - PB)" label="Vale Dos Sertões (Pedra Branca - PB)" />
+      <node id="Vale Dos Sertões (Princesa Isabel - PB)" label="Vale Dos Sertões (Princesa Isabel - PB)" />
+      <node id="Vale Dos Sertões (Ibiara - PB)" label="Vale Dos Sertões (Ibiara - PB)" />
+      <node id="Vale Dos Dinossauros (Monte Horebe - PB)" label="Vale Dos Dinossauros (Monte Horebe - PB)" />
+      <node id="Vale Dos Dinossauros (Cajazeiras - PB)" label="Vale Dos Dinossauros (Cajazeiras - PB)" />
+      <node id="Vale Dos Dinossauros (São João Do Rio Do Peixe - PB)" label="Vale Dos Dinossauros (São João Do Rio Do Peixe - PB)" />
+      <node id="Vale Dos Dinossauros (Poço De José De Moura - PB)" label="Vale Dos Dinossauros (Poço De José De Moura - PB)" />
+      <node id="Vale Dos Dinossauros (Uiraúna - PB)" label="Vale Dos Dinossauros (Uiraúna - PB)" />
+      <node id="Vale Dos Dinossauros (Sousa - PB)" label="Vale Dos Dinossauros (Sousa - PB)" />
+      <node id="Vale Dos Sertões (Pombal - PB)" label="Vale Dos Sertões (Pombal - PB)" />
+      <node id="Vale Dos Sertões (São Bento - PB)" label="Vale Dos Sertões (São Bento - PB)" />
+      <node id="Seridó E Curimataú (Picuí - PB)" label="Seridó E Curimataú (Picuí - PB)" />
+      <node id="Seridó E Curimataú (Araruna - PB)" label="Seridó E Curimataú (Araruna - PB)" />
+      <node id="Brejo (Dona Inês - PB)" label="Brejo (Dona Inês - PB)" />
+      <node id="Brejo (Areia - PB)" label="Brejo (Areia - PB)" />
+      <node id="Brejo (Remígio - PB)" label="Brejo (Remígio - PB)" />
+      <node id="Brejo (Alagoa Nova - PB)" label="Brejo (Alagoa Nova - PB)" />
+      <node id="Brejo (Matinhas - PB)" label="Brejo (Matinhas - PB)" />
+      <node id="Brejo (Alagoa Grande - PB)" label="Brejo (Alagoa Grande - PB)" />
+      <node id="Cariri (Caraúbas - PB)" label="Cariri (Caraúbas - PB)" />
+      <node id="Cariri (Monteiro - PB)" label="Cariri (Monteiro - PB)" />
     </nodes>
     <edges>
-      <edge source="Cariri (Gurjão - PB)" target="Vale Do Paraíba (Itatuba - PB)" id="0" />
-      <edge source="Vale Do Paraíba (Itatuba - PB)" target="Rota Sanhauá (Cabedelo - PB)" id="1" />
-      <edge source="Rota Sanhauá (Cabedelo - PB)" target="Vale Do Mamanguape (Jacaraú - PB)" id="2" />
+      <edge source="Agreste  (Campina Grande - PB)" target="Agreste  (Queimadas - PB)" id="0" weight="0.015649110482085053" />
+      <edge source="Agreste  (Queimadas - PB)" target="Agreste  (Fagundes - PB)" id="1" weight="0.01301266006308412" />
+      <edge source="Agreste  (Fagundes - PB)" target="Vale Do Paraíba (Itatuba - PB)" id="2" weight="0.01750157571794005" />
+      <edge source="Vale Do Paraíba (Itatuba - PB)" target="Vale Do Paraíba (Ingá - PB)" id="3" weight="0.009598364465836817" />
+      <edge source="Vale Do Paraíba (Ingá - PB)" target="Vale Do Paraíba (Mogeiro - PB)" id="4" weight="0.01471003517624197" />
+      <edge source="Vale Do Paraíba (Mogeiro - PB)" target="Vale Do Paraíba (Salgado De São Félix - PB)" id="5" weight="0.0074940849608284895" />
+      <edge source="Vale Do Paraíba (Salgado De São Félix - PB)" target="Vale Do Paraíba (Itabaiana - PB)" id="6" weight="0.01165310953757726" />
+      <edge source="Vale Do Paraíba (Itabaiana - PB)" target="Vale Do Paraíba (Juripiranga - PB)" id="7" weight="0.01172036901963366" />
+      <edge source="Vale Do Paraíba (Juripiranga - PB)" target="Vale Do Paraíba (Pilar - PB)" id="8" weight="0.012278636353962615" />
+      <edge source="Vale Do Paraíba (Pilar - PB)" target="Vale Do Paraíba (Gurinhém - PB)" id="9" weight="0.024521846465968587" />
+      <edge source="Vale Do Paraíba (Gurinhém - PB)" target="Brejo (Alagoinha - PB)" id="10" weight="0.023649755940852807" />
+      <edge source="Brejo (Alagoinha - PB)" target="Brejo (Pilões - PB)" id="11" weight="0.011529681668844063" />
+      <edge source="Brejo (Pilões - PB)" target="Brejo (Serraria - PB)" id="12" weight="0.006117799184852703" />
+      <edge source="Brejo (Serraria - PB)" target="Brejo (Borborema - PB)" id="13" weight="0.0046086464141180256" />
+      <edge source="Brejo (Borborema - PB)" target="Brejo (Bananeiras - PB)" id="14" weight="0.00700298872709998" />
+      <edge source="Brejo (Bananeiras - PB)" target="Brejo (Solânea - PB)" id="15" weight="0.0031353965423343614" />
+      <edge source="Brejo (Solânea - PB)" target="Brejo (Belém - PB)" id="16" weight="0.015225568024604785" />
+      <edge source="Brejo (Belém - PB)" target="Brejo (Pirpirituba - PB)" id="17" weight="0.010317929303754383" />
+      <edge source="Brejo (Pirpirituba - PB)" target="Brejo (Serra Da Raiz - PB)" id="18" weight="0.011975955273368052" />
+      <edge source="Brejo (Serra Da Raiz - PB)" target="Brejo (Duas Estradas - PB)" id="19" weight="0.0027153025628947826" />
+      <edge source="Brejo (Duas Estradas - PB)" target="Brejo (Lagoa De Dentro - PB)" id="20" weight="0.006000724184659995" />
+      <edge source="Brejo (Lagoa De Dentro - PB)" target="Vale Do Mamanguape (Jacaraú - PB)" id="21" weight="0.01098483911449675" />
+      <edge source="Vale Do Mamanguape (Jacaraú - PB)" target="Vale Do Mamanguape (Itapororoca - PB)" id="22" weight="0.024448374668652042" />
+      <edge source="Vale Do Mamanguape (Itapororoca - PB)" target="Vale Do Mamanguape (Mamanguape - PB)" id="23" weight="0.013660299459479953" />
+      <edge source="Vale Do Mamanguape (Mamanguape - PB)" target="Trilhas Dos Potiguaras  (Rio Tinto - PB)" id="24" weight="0.005856252137406205" />
+      <edge source="Trilhas Dos Potiguaras  (Rio Tinto - PB)" target="Trilhas Dos Potiguaras  (Marcação - PB)" id="25" weight="0.00812148902408104" />
+      <edge source="Trilhas Dos Potiguaras  (Marcação - PB)" target="Trilhas Dos Potiguaras  (Baía Da Traição - PB)" id="26" weight="0.012059024996554566" />
+      <edge source="Trilhas Dos Potiguaras  (Baía Da Traição - PB)" target="Trilhas Dos Potiguaras  (Mataraca - PB)" id="27" weight="0.016543430169490024" />
+      <edge source="Trilhas Dos Potiguaras  (Mataraca - PB)" target="Rota Sanhauá (Lucena - PB)" id="28" weight="0.038953240260061854" />
+      <edge source="Rota Sanhauá (Lucena - PB)" target="Rota Sanhauá (Cabedelo - PB)" id="29" weight="0.00918438868274147" />
+      <edge source="Rota Sanhauá (Cabedelo - PB)" target="Rota Sanhauá (João Pessoa - PB)" id="30" weight="0.01720477505677149" />
+      <edge source="Rota Sanhauá (João Pessoa - PB)" target="Rota Sanhauá (Bayeux - PB)" id="31" weight="0.006094857667761849" />
+      <edge source="Rota Sanhauá (Bayeux - PB)" target="Rota Sanhauá (Santa Rita - PB)" id="32" weight="0.0053151821500519395" />
+      <edge source="Rota Sanhauá (Santa Rita - PB)" target="Trilhas Dos Tabajaras (Conde - PB)" id="33" weight="0.016981430822793946" />
+      <edge source="Trilhas Dos Tabajaras (Conde - PB)" target="Trilhas Dos Tabajaras (Pitimbu - PB)" id="34" weight="0.025723158000727518" />
+      <edge source="Trilhas Dos Tabajaras (Pitimbu - PB)" target="Trilhas Dos Tabajaras (Caaporã - PB)" id="35" weight="0.01222107251128124" />
+      <edge source="Trilhas Dos Tabajaras (Caaporã - PB)" target="Vale Do Paraíba (Natuba - PB)" id="36" weight="0.07197077602790417" />
+      <edge source="Vale Do Paraíba (Natuba - PB)" target="Vale Do Paraíba (Umbuzeiro - PB)" id="37" weight="0.013828067531575523" />
+      <edge source="Vale Do Paraíba (Umbuzeiro - PB)" target="Cariri (Boqueirão - PB)" id="38" weight="0.05622670492703454" />
+      <edge source="Cariri (Boqueirão - PB)" target="Cariri (Cabaceiras - PB)" id="39" weight="0.017189702548496517" />
+      <edge source="Cariri (Cabaceiras - PB)" target="Cariri (Gurjão - PB)" id="40" weight="0.034667372164814886" />
+      <edge source="Cariri (Gurjão - PB)" target="Cariri (Taperoá - PB)" id="41" weight="0.03762524327207761" />
+      <edge source="Cariri (Taperoá - PB)" target="Vale Dos Sertões (Santa Luzia - PB)" id="42" weight="0.03884332990503936" />
+      <edge source="Vale Dos Sertões (Santa Luzia - PB)" target="Vale Dos Sertões (Maturéia - PB)" id="43" weight="0.06387335167985712" />
+      <edge source="Vale Dos Sertões (Maturéia - PB)" target="Vale Dos Sertões (Água Branca - PB)" id="44" weight="0.04326778979252055" />
+      <edge source="Vale Dos Sertões (Água Branca - PB)" target="Vale Dos Sertões (Santana Dos Garrotes - PB)" id="45" weight="0.04101078047618123" />
+      <edge source="Vale Dos Sertões (Santana Dos Garrotes - PB)" target="Vale Dos Sertões (Pedra Branca - PB)" id="46" weight="0.010192286141262077" />
+      <edge source="Vale Dos Sertões (Pedra Branca - PB)" target="Vale Dos Sertões (Princesa Isabel - PB)" id="47" weight="0.03524465172316158" />
+      <edge source="Vale Dos Sertões (Princesa Isabel - PB)" target="Vale Dos Sertões (Ibiara - PB)" id="48" weight="0.052421647235380016" />
+      <edge source="Vale Dos Sertões (Ibiara - PB)" target="Vale Dos Dinossauros (Monte Horebe - PB)" id="49" weight="0.03744168120841521" />
+      <edge source="Vale Dos Dinossauros (Monte Horebe - PB)" target="Vale Dos Dinossauros (Cajazeiras - PB)" id="50" weight="0.036026681211787634" />
+      <edge source="Vale Dos Dinossauros (Cajazeiras - PB)" target="Vale Dos Dinossauros (São João Do Rio Do Peixe - PB)" id="51" weight="0.021479483810681196" />
+      <edge source="Vale Dos Dinossauros (São João Do Rio Do Peixe - PB)" target="Vale Dos Dinossauros (Poço De José De Moura - PB)" id="52" weight="0.01849595942074268" />
+      <edge source="Vale Dos Dinossauros (Poço De José De Moura - PB)" target="Vale Dos Dinossauros (Uiraúna - PB)" id="53" weight="0.012456728327369411" />
+      <edge source="Vale Dos Dinossauros (Uiraúna - PB)" target="Vale Dos Dinossauros (Sousa - PB)" id="54" weight="0.03360657796485205" />
+      <edge source="Vale Dos Dinossauros (Sousa - PB)" target="Vale Dos Sertões (Pombal - PB)" id="55" weight="0.047881331721961316" />
+      <edge source="Vale Dos Sertões (Pombal - PB)" target="Vale Dos Sertões (São Bento - PB)" id="56" weight="0.05009360461804525" />
+      <edge source="Vale Dos Sertões (São Bento - PB)" target="Seridó E Curimataú (Picuí - PB)" id="57" weight="0.12144185111767261" />
+      <edge source="Seridó E Curimataú (Picuí - PB)" target="Seridó E Curimataú (Araruna - PB)" id="58" weight="0.06745637355695036" />
+      <edge source="Seridó E Curimataú (Araruna - PB)" target="Brejo (Dona Inês - PB)" id="59" weight="0.014729228062781851" />
+      <edge source="Brejo (Dona Inês - PB)" target="Brejo (Areia - PB)" id="60" weight="0.04112795608565792" />
+      <edge source="Brejo (Areia - PB)" target="Brejo (Remígio - PB)" id="61" weight="0.010358215515941191" />
+      <edge source="Brejo (Remígio - PB)" target="Brejo (Alagoa Nova - PB)" id="62" weight="0.010753214115266169" />
+      <edge source="Brejo (Alagoa Nova - PB)" target="Brejo (Matinhas - PB)" id="63" weight="0.006390360520146876" />
+      <edge source="Brejo (Matinhas - PB)" target="Brejo (Alagoa Grande - PB)" id="64" weight="0.01811197319169058" />
+      <edge source="Brejo (Alagoa Grande - PB)" target="Cariri (Caraúbas - PB)" id="65" weight="0.1218480649867622" />
+      <edge source="Cariri (Caraúbas - PB)" target="Cariri (Monteiro - PB)" id="66" weight="0.07192547246919491" />
+      <edge source="Cariri (Monteiro - PB)" target="Agreste  (Campina Grande - PB)" id="67" weight="0.15606802197563885" />
     </edges>
   </graph>
 </gexf>

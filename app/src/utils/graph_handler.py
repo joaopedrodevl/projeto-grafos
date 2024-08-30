@@ -3,6 +3,29 @@ import time
 from typing import List
 import networkx as nx
 
+def read_graph(file_path):
+    return nx.read_gexf(file_path)
+
+def nearest_neighbor_tsp(graph, start):
+    path = [start]
+    total_length = 0
+    current = start
+    unvisited = set(graph.nodes)
+    unvisited.remove(start)
+    
+    while unvisited:
+        next_city = min(unvisited, key=lambda city: graph[current][city]['weight'])
+        total_length += graph[current][next_city]['weight']
+        path.append(next_city)
+        current = next_city
+        unvisited.remove(next_city)
+    
+    # Voltar para a cidade de partida
+    total_length += graph[current][start]['weight']
+    path.append(start)
+    
+    return total_length, path
+
 async def add_edges_between_cities_async(graph: nx.DiGraph, cities_to_visit_data: List[tuple]) -> None:
     """
     Adds edges between cities in a graph based on the given cities_to_visit_data.
