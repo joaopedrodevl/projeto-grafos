@@ -3,6 +3,29 @@ import time
 from typing import List
 import networkx as nx
 
+def read_graph(file_path):
+    return nx.read_gexf(file_path)
+
+def nearest_neighbor_tsp(graph, start):
+    path = [start]
+    total_length = 0
+    current = start
+    unvisited = set(graph.nodes)
+    unvisited.remove(start)
+    
+    while unvisited:
+        next_city = min(unvisited, key=lambda city: graph[current][city]['weight'])
+        total_length += graph[current][next_city]['weight']
+        path.append(next_city)
+        current = next_city
+        unvisited.remove(next_city)
+    
+    # Voltar para a cidade de partida
+    total_length += graph[current][start]['weight']
+    path.append(start)
+    
+    return total_length, path
+
 async def add_edges_between_cities_async(graph: nx.DiGraph, cities_to_visit_data: List[tuple]) -> None:
     """
     Adds edges between cities in a graph based on the given cities_to_visit_data.
@@ -13,16 +36,36 @@ async def add_edges_between_cities_async(graph: nx.DiGraph, cities_to_visit_data
     None
     """
     for i in range(len(cities_to_visit_data)):
-        city1, uf1, country1 = cities_to_visit_data[i]
+        name1, city1, uf1, country1 = cities_to_visit_data[i]
         for j in range(i+1, len(cities_to_visit_data)):
-            city2, uf2, country2 = cities_to_visit_data[j]
-            if not graph.has_node(f"{city2} - {uf2}"):
-                graph.add_node(f"{city2} - {uf2}")
+            name2, city2, uf2, country2 = cities_to_visit_data[j]
+            if not graph.has_node(f"{name2} ({city2} - {uf2})") or not graph.has_node(f"{name2} ({uf2} - {country2})"):
+                if name2 == city2:
+                    graph.add_node(f"{name2} ({uf2} - {country2})")
+                else:
+                    graph.add_node(f"{name2} ({city2} - {uf2})")
             
+            if name1 == city1:
+                # String = "Cidade (UF - País)"
+                origin = f"{name1} ({uf1} - {country1})"
+            else:
+                # String = "Região (Cidade - Uf)"
+                origin = f"{name1} ({city1} - {uf1})"
+
+            if name2 == city2:
+                # String = "Cidade (UF - País)"
+                node = f"{name2} ({uf2} - {country2})"
+            else:
+                # String = "Região (Cidade - Uf)"
+                node = f"{name2} ({city2} - {uf2})"
+
+            # Avoid ties
+            if origin == node:
+                continue
+
             distance = await calculate_distance_async(f"{city1}, {uf1}, {country1}", f"{city2}, {uf2}, {country2}")
-            graph.add_edge(f"{city1} - {uf1}", f"{city2} - {uf2}", weight=distance/1000)
-            graph.add_edge(f"{city2} - {uf2}", f"{city1} - {uf1}", weight=distance/1000)
-            time.sleep(2)
+            graph.add_edge(origin, node, weight=distance/1000)
+            graph.add_edge(node, origin, weight=distance/1000)
 
 async def add_edges_between_origin_city_and_cities_to_visit_async(graph: nx.DiGraph, origin_city: str, cities_to_visit_data: List[tuple]) -> None:
     """
@@ -35,14 +78,38 @@ async def add_edges_between_origin_city_and_cities_to_visit_async(graph: nx.DiGr
     None
     """
     ...
-    for city, uf, country in cities_to_visit_data:
-        if not graph.has_node(f"{city} - {uf}"):
-            graph.add_node(f"{city} - {uf}")
+
+    # String = "Cidade, UF, País"
+    data_origin = f"{origin_city[1]}, {origin_city[2]}, {origin_city[3]}"
+
+    if origin_city[0] == origin_city[1]:
+        # String = "Cidade (UF - País)"
+        origin_city = f"{origin_city[1]} ({origin_city[2]} - {origin_city[3]})"
+    else:
+        # String = "Região (Cidade - Uf)"
+        origin_city = f"{origin_city[0]} ({origin_city[1]} - {origin_city[2]})"
+
+    for name, city, uf, country in cities_to_visit_data:
+        if not graph.has_node(f"{name} ({city} - {uf})") or not graph.has_node(f"{name} ({uf} - {country})"):
+            if name == city:
+                graph.add_node(f"{name} ({uf} - {country})")
+            else:
+                graph.add_node(f"{name} ({city} - {uf})")
         
-        distance = await calculate_distance_async(origin_city, f"{city}, {uf}, {country}")
-        graph.add_edge(origin_city, f"{city} - {uf}", weight=distance/1000)
-        graph.add_edge(f"{city} - {uf}", origin_city, weight=distance/1000)
-        time.sleep(2)
+        if name == city:
+            # String = "Cidade (UF - País)"
+            node = f"{name} ({uf} - {country})"
+        else:
+            # String = "Região (Cidade - Uf)"
+            node = f"{name} ({city} - {uf})"
+
+        # Avoid ties
+        if origin_city == node:
+            continue
+
+        distance = await calculate_distance_async(data_origin, f"{city}, {uf}, {country}")
+        graph.add_edge(origin_city, node, weight=distance/1000)
+        graph.add_edge(node, origin_city, weight=distance/1000)
 
 async def shortest_path_between_two_vertices_passing_through_all (graph: nx.DiGraph, origin_city: str) -> List[str]:
     """
